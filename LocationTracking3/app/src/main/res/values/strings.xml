@@ -1,8 +1,6 @@
 <resources>
     <string name="app_name">LocationTracking</string>
-<!--    <string name="Map_key">AIzaSyAQIt655kmJRv_GAwtbzsiNa29bwuRHYDA</string>-->
-    <string name="Map_key">AIzaSyCOoPaYeA3Q1qVoDZ55Kc3gTJNjELtzzWI</string>
-    <!--    AIzaSyAQIt655kmJRv_GAwtbzsiNa29bwuRHYDA-->
+    <string name="Map_key">My_API_KEY</string>
     <!-- to toggle the open close button of the navigation drawer -->
     <string name="nav_open">Open</string>
     <string name="nav_close">Close</string>
