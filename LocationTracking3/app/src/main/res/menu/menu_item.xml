@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_add"
+            android:icon="@drawable/add_member"
+            android:title="Create Group" />
+        <item
+            android:id="@+id/nav_join"
+            android:icon="@drawable/join"
+            android:title="Join Group" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/search_location"
+            android:title="Search Location" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout"/>
+    </group>
+
+
+</menu>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/nav_add"
+            android:actionLayout="@layout/custom_menu_item"
+            android:title="@null" />
+        <item
+            android:id="@+id/nav_join"
+            android:actionLayout="@layout/custom_menu_item"
+            android:title="@null" />
+        <item
+            android:id="@+id/nav_search"
+            android:actionLayout="@layout/custom_menu_item"
+            android:title="@null" />
+        <item
+            android:id="@+id/nav_logout"
+            android:actionLayout="@layout/custom_menu_item"
+            android:title="@null" />
+    </group>
+
+
+</menu>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00090909"
+    android:paddingHorizontal="@dimen/_5sdp"
+    android:paddingVertical="@dimen/_5sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomsheet_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/imgclose"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/close"
+            android:tint="#FFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/imguser"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgclose"
+            app:round="@dimen/_50sdp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtusername"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="User"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            app:layout_constraintBottom_toTopOf="@id/txtcurrentcity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imguser"
+            app:layout_constraintTop_toTopOf="@id/imguser" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtcurrentcity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="City"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintBottom_toBottomOf="@id/imguser"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imguser"
+            app:layout_constraintTop_toBottomOf="@id/txtusername" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtowner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/text_bg"
+            android:fontFamily="@font/poppinssemibold"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="Owner"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toTopOf="@id/imgdirection"
+            app:layout_constraintEnd_toStartOf="@id/txtnetwork"
+            app:layout_constraintStart_toStartOf="@id/imguser"
+            app:layout_constraintTop_toBottomOf="@id/imguser" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtnetwork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_bg"
+            android:fontFamily="@font/poppinssemibold"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="Network"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="@id/txtowner"
+            app:layout_constraintEnd_toStartOf="@id/txtcharg"
+            app:layout_constraintStart_toEndOf="@id/txtowner"
+            app:layout_constraintTop_toTopOf="@id/txtowner" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/txtcharg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/text_bg"
+            android:fontFamily="@font/poppinssemibold"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_5sdp"
+            android:text="Charge"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintBottom_toBottomOf="@id/txtowner"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txtnetwork"
+            app:layout_constraintTop_toTopOf="@id/txtowner" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/user_imfo_bg"
+            app:layout_constraintBottom_toBottomOf="@id/imgdirection"
+            app:layout_constraintEnd_toEndOf="@id/imgdirection"
+            app:layout_constraintStart_toStartOf="@id/imgdirection"
+            app:layout_constraintTop_toBottomOf="@id/txtowner"
+            app:layout_constraintTop_toTopOf="@id/imgdirection" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/imgdirection"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/direction"
+            android:tint="#FFF"
+            app:layout_constraintEnd_toStartOf="@+id/imginfo"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtowner" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/user_imfo_bg"
+            app:layout_constraintBottom_toBottomOf="@id/imginfo"
+            app:layout_constraintEnd_toEndOf="@id/imginfo"
+            app:layout_constraintStart_toStartOf="@id/imginfo"
+            app:layout_constraintTop_toBottomOf="@id/txtowner"
+            app:layout_constraintTop_toTopOf="@id/imginfo" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/imginfo"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/information"
+            android:tint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/imgdirection"
+            app:layout_constraintEnd_toStartOf="@+id/imgdelete"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imgdirection"
+            app:layout_constraintTop_toTopOf="@id/imgdirection" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/user_imfo_bg"
+            app:layout_constraintBottom_toBottomOf="@id/imgdelete"
+            app:layout_constraintEnd_toEndOf="@id/imgdelete"
+            app:layout_constraintStart_toStartOf="@id/imgdelete"
+            app:layout_constraintTop_toBottomOf="@id/txtowner"
+            app:layout_constraintTop_toTopOf="@id/imgdelete" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/imgdelete"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/delete"
+            android:tint="#FFF"
+            app:layout_constraintBottom_toBottomOf="@id/imgdirection"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imginfo"
+            app:layout_constraintTop_toTopOf="@id/imgdirection" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="#8F8F8F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgdirection" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
